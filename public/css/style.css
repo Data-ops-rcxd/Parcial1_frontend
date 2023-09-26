@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'icons';
+    src: url('/assets/fonts/icomoon.eot?c4y7lo');
+    src: url('/assets/fonts/icomoon.eot?c4y7lo#iefix') format('embedded-opentype'),
+        url('/assets/fonts/icomoon.ttf?c4y7lo') format('truetype'),
+        url('/assets/fonts/icomoon.woff?c4y7lo') format('woff'),
+        url('/assets/fonts/icomoon.svg?c4y7lo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(19, 19, 19);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+.name{
+    display: flex;
+}
+.name .text {
+    color: white;
+}
+
+.name .icon::before {
+    height: 30px;
+    width: 30px;
+    font-family: "icons";
+    content: "\ea81";
+    display: inline-block;
+    color: #7611a6;
+}
+
+.menuselection {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    background-color: black;
+    border-radius: 2rem;
+    padding: 0;
+    padding-right: 5px;
+}
+
+.menuselection li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    color: rgb(225, 225, 225);
+}
+
+.menuselection li #selection {
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: #7611a6;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.contacts div {
+    margin: 0.2rem;
+}
+
+#twitter::before{
+    height: 30px;
+    width: 30px;
+    font-family: "icons";
+    content: "\ea96";
+    display: inline-block;
+    color: #7611a6;
+}
+#twitch::before{
+    height: 30px;
+    width: 30px;
+    font-family: "icons";
+    content: "\ea9f";
+    display: inline-block;
+    color: #7611a6;
+}
+#github::before{
+    height: 30px;
+    width: 30px;
+    font-family: "icons";
+    content: "\eab0";
+    display: inline-block;
+    color: #7611a6;
+}
+#NAlogo::before{
+    height: 30px;
+    width: 30px;
+    font-family: "icons";
+    content: "\eae8";
+    display: inline-block;
+    color: #7611a6;
+}
+#basketball::before{
+    height: 30px;
+    width: 30px;
+    font-family: "icons";
+    content: "\e902";
+    display: inline-block;
+    color: #7611a6;
+}
+#youtube::before{
+    height: 30px;
+    width: 30px;
+    font-family: "icons";
+    content: "\e912";
+    display: inline-block;
+    color: #7611a6;
+}
+.start {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.start .maintext {
+    width: 25%;
+}
+
+.start .maintext #title {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+
+.start .maintext #about {
+    font-size: medium;
+    color: #62687d;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    padding-block: 0.2rem;
+    border-radius: 2rem;
+}
+
+.skills p {
+    font-size: small;
+    background-color: #7611a6;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+    border-radius: 2rem;
+    margin-right: 0.1rem;
+}
+.skillicon1::before{
+    height: 10px;
+    width: 10px;
+    font-family: "icons";
+    content: "\ea80";
+    display: inline-block;
+    color: #ffffff;
+}
+.skillicon2::before{
+    height: 10px;
+    width: 10px;
+    font-family: "icons";
+    content: "\e900";
+    display: inline-block;
+    color: #fffeff;
+}
+.skillicon3::before{
+    height: 10px;
+    width: 10px;
+    font-family: "icons";
+    content: "\e905";
+    display: inline-block;
+    color: #ffffff;
+}
+.mainimg {
+    background-image: url(/assets/portrait.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    height: 350px;
+    width: 270px;
+}
+
+.info {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infobigcont {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    border: 0.1rem solid #c2c9db;
+    border-radius: 1rem;
+    box-shadow: -1px -1px 13px 0px #c2c9db;
+}
+
+.infocont {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.infotitle {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.infotext {
+    font-size: medium;
+    color: #c2c9db;
+}
+
+.work {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.work .workcont {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.worktitle {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.worktext {
+    font-size: medium;
+    color: #c2c9db;
+}
+
+.workbtn {
+    display: flex;
+    border-radius: 2rem;
+}
+
+.workbtn p {
+    display: flex;
+    font-size: small;
+    background-color: #7611a6;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 0.2rem;
+    border-radius: 2rem;
+}
+
+.examples {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+#cont1 {
+    margin-top: 2rem;
+}
+
+#cont2 {
+    margin-bottom: 2rem;
+}
+
+.img {
+    display: flex;
+    border-radius: 1rem;
+    margin: 0.8rem;
+    width: 300px;
+    height: 180px;
+}
+
+#img1 {
+    background-image: url(/assets/stock-3.jpg);
+    background-size: cover;
+}
+
+#img2 {
+    background-image: url(/assets/stock-2.jpg);
+    background-size: cover;
+}
+
+#img3 {
+    background-image: url(/assets/stock-1.jpg);
+    background-size: cover;
+}
+
+#img4 {
+    background-image: url(/assets/stock-4.jpg);
+    background-size: cover;
+}
+
+.exampletext {
+    display: flex;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    height: 10%;
+    border-radius: 0.5rem;
+    font-size: smaller;
+    color: #c2c9db;
+    background-color: black;
+}
+
+.mentions {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mentionstitle {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+
+.mentionstext {
+    font-size: medium;
+    color: #c2c9db;
+    width: 50%;
+}
+
+.mcont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+}
+
+.ment {
+    display: flex;
+    border-radius: 1rem;
+    margin: 0.8rem;
+    width: 200px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    color: #c2c9db;
+    background-color: rgb(25, 25, 25);
+    box-shadow: 1px 1px 4px 0px #c2c9db;
+}
+
+.interest {
+    margin-block: 50px;
+    padding-block: 2rem;
+    border-block: 0.2px solid #191920;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.interesttitle {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    width: 18%;
+}
+
+.interestbtn {
+    margin: 1rem;
+    display: flex;
+    border-radius: 2rem;
+}
+
+.interestbtn p {
+    display: flex;
+    font-size: small;
+    background-color: #7611a6;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+    border-radius: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about .text,
+.who {
+    color: #c2c9db;
+    font-size: xx-small;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.social ul li {
+    margin: 0.2rem;
+    color: #c2c9db;
+    font-size: xx-small;
+}
